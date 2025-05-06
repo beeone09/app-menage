@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do Ménage en Couple</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div style="text-align:center; margin-top:20px;">
+    <button onclick="resetWeek()">🔁 Réinitialiser la semaine</button>
+</div>
+
+<body>
+  <h1>To-Do Ménage 🧽</h1>
+
+  <div class="user-section">
+    <h2>Utilisateur : <span id="user-name"></span></h2>
+    <select id="user-select">
+      <option value="A">Personne A</option>
+      <option value="B">Personne B</option>
+    </select>
+  </div>
+
+  <form id="task-form">
+    <input type="text" id="task-name" placeholder="Nom de la tâche" required />
+    <button type="submit">Ajouter la tâche</button>
+  </form>
+
+  <div id="task-list"></div>
+
+  <div id="score-board">
+    <h3>Scores</h3>
+    <p>Personne A : <span id="scoreA">0</span> pts</p>
+    <p>Personne B : <span id="scoreB">0</span> pts</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
